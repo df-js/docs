@@ -25,7 +25,6 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^17.0.2",
     "react-highlight": "^0.15.0",
-    "react-runkit": "^0.9.0",
     "react-text-on-svg": "^1.0.1",
     "react-text-on-svg-but-better": "^1.0.3",
     "react-toastify": "^9.1.2"
