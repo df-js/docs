@@ -6,25 +6,91 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary: #3e1d72;
+  --ifm-color-primary-dark: #2e0058;
+  --ifm-color-primary-darker: #250047;
+  --ifm-color-primary-darkest: #1a002c;
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+  --ifm-uk-background-color: white;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary: #7b25c2;
+  --ifm-color-primary-dark: #550086;
+  --ifm-color-primary-darker: #660096;
+  --ifm-color-primary-darkest: #370247;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
+  --ifm-uk-background-color: #1b1b1d;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+}
+.Toastify__toast-body {
+  font-family: 'Segoe UI', sans-serif
+}
+.btn-group button {
+  background-color: var(--ifm-hover-overlay); /* Green background */
+  border: none;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+.btn-group {
+  padding-bottom: 5px;
+}
+
+.btn-group button:hover {
+  background-color: #250047;  
+}
+
+
+.btn-group button {
+  background-color: --ifm-color-primary-dark
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+.java-toggle {
+  border-radius: 0px 0px 0px 5px;
+}
+
+.type-toggle {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.whatthis {
+  background-color: var(--ifm-hover-overlay); /* Green background */
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-right: 10px;
+  padding-left: 5px;
+  border-radius: 5px 5px 0px 0px;
+}
+.huww-title {
+  color: var(--ifm-color-content);
+}
+.huww-widget-two {
+  background-color: var(--ifm-uk-background-color) !important; 
+}
+.huww-expended-widget-wrapper {
+  background-color: var(--ifm-uk-background-color) !important; 
+}
+.huww-expended-widget-hide {
+  color: var(--ifm-color-content) !important;
 }

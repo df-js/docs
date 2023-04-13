@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'df.js',
+  tagline: 'The same DiamondFire coding experience, with a different language.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'df-js', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,14 +42,10 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/df-js/docs/tree/main/',
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -60,11 +56,19 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+
     ({
+      colorMode: {
+        
+          defaultMode: 'dark',
+          disableSwitch: false,
+          respectPrefersColorScheme: true,
+        
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'df.js',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -78,7 +82,13 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/df-js/docs',
+            label: 'Docs GitHub',
+            position: 'right',
+          },
+          
+          {
+            href: 'https://github.com/df-js/df.js',
             label: 'GitHub',
             position: 'right',
           },
@@ -122,12 +132,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/df-js/df.js',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `df.js is licensed under the <a href="https://github.com/df-js/df.js/blob/main/LICENSE">MIT License</a>`,
       },
       prism: {
         theme: lightCodeTheme,
