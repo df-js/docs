@@ -70,8 +70,8 @@ const config = {
       navbar: {
         title: 'df.js',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'df.js logo',
+          src: 'img/df-js.png',
         },
         hideOnScroll: true,
         items: [
@@ -102,39 +102,40 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Home',
+                to: '/',
               },
+              {
+                label: "Docs", 
+                to: "/docs/getting-started"
+              },
+              {
+                label: "Blog",
+                to: "/blog"
+              }
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'GitHub',
+                href: 'https://www.github.com/df-js',
+              }
+              
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
+                label: 'GitHub of main project',
                 href: 'https://github.com/df-js/df.js',
               },
+              {
+                label: 'GitHub of docs',
+                href: 'https://github.com/df-js/docs',
+              }
             ],
           },
         ],

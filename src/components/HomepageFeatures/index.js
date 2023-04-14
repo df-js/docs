@@ -7,34 +7,31 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    num: 1,
+    num: "1",
 
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        df.js is always using enums and other easy values so you have to use the documentation as little as possible.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    num: 2,
+    title: 'Same Coding',
+    num: "2",
 
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        df.js is built with the same exact blocks and coding system as regular coding, giving you the same DiamondFire coding experience you know and love.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    num: 3,
+    title: 'More Efficent',
+    num: "3",
 
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Line coding is a lot more efficent, as its faster to type code than it is to place blocks, which will make it faster to make games.
       </>
     ),
   },
@@ -44,7 +41,12 @@ function Feature({num, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <BrowserOnly><TextOnSvg num={num}/></BrowserOnly>
+        <BrowserOnly>
+          {() => { // It took me so long to finally fix the issue, a day and a half.
+            return <TextOnSvg num={num}/>
+          }}
+        </BrowserOnly>
+        
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
