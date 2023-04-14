@@ -12,8 +12,7 @@ const TextOnSvg = ({
   fontWeight = 500,
   fontFamily = '',
   backgroundColor = '#417505',
-  color = '#FFFFFF',
-  rx = "10px"
+  color = '#FFFFFF'
 }) => {
 
   let lines = [];
@@ -45,7 +44,7 @@ const TextOnSvg = ({
       version="1.1"
       xmlns="http://www.w3.org/2000/svg">
       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-        <rect fill={backgroundColor} x="0" y="0" width={width} height={height} rx={rx}></rect>
+        <rect fill={backgroundColor} x="0" y="0" width={width} height={height} rx="10px"></rect>
         
         <text
           {...fontFamily !== '' ? {fontFamily: fontFamily} : {}}
@@ -72,8 +71,7 @@ TextOnSvg.propTypes = {
   fontWeight: number,
   fontFamily: string,
   backgroundColor: string,
-  color: string,
-  rx: number
+  color: string
 };
 
 export default TextOnSvg;
