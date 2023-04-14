@@ -73,6 +73,7 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'docSidebar',
@@ -91,7 +92,7 @@ const config = {
             href: 'https://github.com/df-js/df.js',
             label: 'GitHub',
             position: 'right',
-          },
+          }
         ],
       },
       footer: {
