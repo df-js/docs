@@ -38,7 +38,6 @@ const FeatureList = [
 
 function Feature({unc, title, description, num}) {
   const item = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-  console.log(item)
   if (num == 1) {
     num = "#6852d2"
   } else {

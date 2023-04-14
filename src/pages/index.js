@@ -33,7 +33,6 @@ export default function Home() {
     
     <Layout
       description="Description will go into a meta tag in <head />">
-      <ToastContainer />
       <HomepageHeader />
       <main>
         <HomepageFeatures />
