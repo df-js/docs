@@ -2,19 +2,17 @@ import React from 'react';
 import { string, number } from 'prop-types';
 import svgTextWrap from 'svg-text-wrap';
 
-const TextOnSvg = ({
-  className = 'text-on-svg',
-  text = '',
-  width = 512,
-  height = 448,
-  textWidth = 0.8,
-  fontSize = 48,
-  fontWeight = 500,
-  fontFamily = '',
-  backgroundColor = '#417505',
-  color = '#FFFFFF'
-}) => {
-
+const TextOnSvg = () => {
+    var className = 'text-on-svg'
+    var text = ''
+    var width = 512
+    var height = 448
+    var textWidth = 0.8
+    var fontSize = 48
+    var fontWeight = 500
+    var fontFamily = ''
+    var backgroundColor = '#417505'
+    var color = '#FFFFFF'
   let lines = [];
   if (text) {
     lines = svgTextWrap(
@@ -60,18 +58,4 @@ const TextOnSvg = ({
     </svg>
   )
 };
-
-TextOnSvg.propTypes = {
-  className: string,
-  text: string,
-  width: number,
-  height: number,
-  textWidth: number,
-  fontSize: number,
-  fontWeight: number,
-  fontFamily: string,
-  backgroundColor: string,
-  color: string
-};
-
 export default TextOnSvg;
