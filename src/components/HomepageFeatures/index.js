@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import TextOnSvg from '../TextOnSvg';
+import TextOnSvg from '../../util/index';
 
 const FeatureList = [
   {
@@ -9,49 +9,56 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        df.js is always using enums and other easy values so you have to use the documentation as little as possible.
       </>
     ),
+    unc: "!!", num: 1
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Same Coding',
+    Svg: require('@site/static/img/prompic1.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        df.js is built with the same exact blocks and coding system as regular coding, giving you the same DiamondFire coding experience you know and love.
       </>
     ),
+    unc: '<3', num: 2
   },
   {
-    title: 'Powered by React',
+    title: 'More Efficent',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Line coding is a lot more efficent, as its faster to type code than it is to place blocks, which will make it faster to make games.
       </>
     ),
+    unc: "_>", num: 1
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({unc, title, description, num}) {
+  const item = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+  if (num == 1) {
+    num = "#6852d2"
+  } else {
+    num = "#4222e2"
+  }
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
       <TextOnSvg
         className="text-on-svg"
-        text="aa"
+        text={unc}
         width={200}
         height={200}
         textWidth={0.8}
         fontSize={48}
         fontWeight={500}
         fontFamily="DM Mono, Open Sans, Helvetica, Arial, sans-serif"
-        backgroundColor="#000"
+        backgroundColor={num}
         color="#FFFFFF"
       />
+
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
