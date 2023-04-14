@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdf_js=self.webpackChunkdf_js||[]).push([[769],{1663:a=>{a.exports=JSON.parse('{"label":"diamondfire","permalink":"/blog/tags/diamondfire","allTagsPath":"/blog/tags","count":1}')}}]);
