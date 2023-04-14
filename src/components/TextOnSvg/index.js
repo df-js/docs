@@ -12,11 +12,7 @@ const TextOnSvg = ({
   fontWeight = 500,
   fontFamily = '',
   backgroundColor = '#417505',
-<<<<<<< HEAD:src/util/index.js
   color = '#FFFFFF'
-=======
-  color = '#FFFFFF',
->>>>>>> 3b1ea20 (Revert "Revert "ya""):src/components/TextOnSvg/index.js
 }) => {
 
   let lines = [];
