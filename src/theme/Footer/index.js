@@ -17,31 +17,3 @@ export default function FooterWrapper(props) {
     </>
   );
 }
- function ToggleChecker() {
-  waitForElm(".java-toggle").then((but) => {
-    but.addEventListener("click", () => {console.log("hi")})
-  })
-  
-
-  return (<></>);
-}
-
-function waitForElm(selector) {
-  return new Promise(resolve => {
-      if (document.querySelector(selector)) {
-          return resolve(document.querySelector(selector));
-      }
-
-      const observer = new MutationObserver(mutations => {
-          if (document.querySelector(selector)) {
-              resolve(document.querySelector(selector));
-              observer.disconnect();
-          }
-      });
-
-      observer.observe(document.body, {
-          childList: true,
-          subtree: true
-      });
-  });
-}
